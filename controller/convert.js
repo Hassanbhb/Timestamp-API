@@ -24,10 +24,10 @@ module.exports = {
 			d = date.split(' ');
 		}
 		
-		if (!Number.isInteger(d[0])) {
+		if (!isNaN(d[0])) {
 			return monthNames[d[0]-1]+' '+d[1]+', '+d[2];
 		}else{
-			return d[0]+' '+d[1]+' '+d[2];
+			return d[0]+' '+d[1]+', '+d[2];
 		}
 		
 	}
